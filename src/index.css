@@ -4,48 +4,48 @@
 
 @layer base {
   :root {
-    --background: 0 0% 98%;
-    --foreground: 220 25% 10%;
+    --background: 210 17% 98%;
+    --foreground: 0 0% 20%;
 
     --card: 0 0% 100%;
-    --card-foreground: 220 25% 10%;
+    --card-foreground: 0 0% 20%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 220 25% 10%;
+    --popover-foreground: 0 0% 20%;
 
-    --primary: 220 35% 12%;
-    --primary-foreground: 45 60% 82%;
+    --primary: 210 56% 23%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 45 30% 94%;
-    --secondary-foreground: 220 35% 12%;
+    --secondary: 210 17% 96%;
+    --secondary-foreground: 210 56% 23%;
 
-    --muted: 220 15% 94%;
-    --muted-foreground: 220 10% 50%;
+    --muted: 210 17% 94%;
+    --muted-foreground: 0 0% 40%;
 
-    --accent: 43 74% 58%;
-    --accent-foreground: 220 35% 10%;
+    --accent: 25 80% 54%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 220 15% 88%;
-    --input: 220 15% 88%;
-    --ring: 43 74% 58%;
+    --border: 210 17% 88%;
+    --input: 210 17% 88%;
+    --ring: 25 80% 54%;
 
     --radius: 0.25rem;
 
-    --navy: 220 35% 12%;
-    --gold: 43 74% 58%;
-    --cream: 45 60% 96%;
+    --navy: 210 56% 23%;
+    --orange: 25 80% 54%;
+    --light-gray: 210 17% 98%;
 
-    --sidebar-background: 220 35% 12%;
-    --sidebar-foreground: 45 60% 82%;
-    --sidebar-primary: 43 74% 58%;
-    --sidebar-primary-foreground: 220 35% 10%;
-    --sidebar-accent: 220 30% 18%;
-    --sidebar-accent-foreground: 45 60% 82%;
-    --sidebar-border: 220 25% 20%;
-    --sidebar-ring: 43 74% 58%;
+    --sidebar-background: 210 56% 23%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 25 80% 54%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 210 50% 30%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 210 40% 35%;
+    --sidebar-ring: 25 80% 54%;
   }
 }
 
@@ -57,6 +57,7 @@
   body {
     @apply bg-background text-foreground;
     font-family: "Golos Text", sans-serif;
+    color: #333333;
   }
 
   h1,
@@ -143,10 +144,10 @@
   animation-delay: 0.6s;
 }
 
-/* Gold divider */
+/* Accent divider */
 .gold-line {
   height: 2px;
-  background: linear-gradient(90deg, transparent, hsl(43 74% 58%), transparent);
+  background: linear-gradient(90deg, transparent, #e8842b, transparent);
 }
 
 /* Nav link hover */
@@ -161,7 +162,7 @@
   left: 0;
   width: 0;
   height: 1px;
-  background: hsl(43 74% 58%);
+  background: #e8842b;
   transition: width 0.3s ease;
 }
 .nav-link:hover::after {
